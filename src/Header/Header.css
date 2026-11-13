@@ -1,0 +1,26 @@
+.site-header {
+    height: 145px;
+    color: #fff;
+    background: var(--green);
+}
+
+.header-top {
+    height: 104px;
+    border-top: 3px solid rgba(255, 255, 255, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .13);
+}
+
+.header-top .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -.8px;
+}

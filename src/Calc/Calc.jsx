@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Calc.css"
 
 function Calc(props) {
     const [result, setResult] = useState(null)
@@ -26,27 +27,28 @@ function Calc(props) {
             <h2>Калькулятор обмена</h2>
 
             <div className="calculator">
-                <p className="muted">Я хочу</p>
 
                 <form onSubmit={FormRes}>
-                    <input type="number" name="amount" />
+                    <div className="inputSec">
+                        <input className='inputAmount' type="number" name="amount" />
 
-                    <select aria-label="Валюта" name="currency">
-                        {props.rate.map((item) => (
-                            <option key={item.quote} value={item.quote}>
-                                {item.quote}
-                            </option>
-                        ))}
-                    </select>
+                        <select className="selectCur" aria-label="Валюта" name="currency">
+                            {props.rate.map((item) => (
+                                <option key={item.quote} value={item.quote}>
+                                    {item.quote}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
 
                     <button>Submit</button>
                 </form>
-            </div>
+                <div>
 
-            <p className="muted result-title">Результат</p>
-
-            <div className="results">
-                {result !== null ? `${base}: ${result.toFixed(2)}` : "0.00"}
+                    <div className="results">
+                        {result !== null ? `${base}: ${result.toFixed(2)}` : "0.00"}
+                    </div>
+                </div>
             </div>
         </section>
     )

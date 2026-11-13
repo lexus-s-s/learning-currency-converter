@@ -51,71 +51,7 @@ h2 {
   font-size: 22px;
 }
 
-.calculator-section {
-  margin-top: 15px;
-}
 
-.calculator {
-  min-height: 302px;
-  margin: 0 18px;
-  padding: 17px;
-  border: 1px solid #aaa;
-  background: var(--panel-bg);
-}
-
-.muted {
-  margin: 0 0 12px;
-  color: #858585;
-  font-size: 13px;
-}
-
-.radio-line {
-  display: block;
-  margin: 0 0 13px;
-  color: #777;
-  font-size: 14px;
-}
-
-.radio-line input {
-  margin: 0 5px 0 0;
-  vertical-align: -1px;
-}
-
-.amount-row {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: 17px;
-}
-
-.amount-row input {
-  width: 139px;
-  height: 20px;
-  padding: 1px 4px;
-  border: 1px solid #bbb;
-  background: #fff;
-  font: 13px Arial, sans-serif;
-}
-
-.amount-row select {
-  height: 20px;
-  padding: 0 2px;
-  border: 1px solid #aaa;
-  background: #fff;
-  font: 12px Arial, sans-serif;
-}
-
-.result-title {
-  margin: 17px 0 5px;
-}
-
-.results {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  color: #777;
-  font-size: 16px;
-}
 
 .cookie-notice {
   margin: 68px 0 0;
